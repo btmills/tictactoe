@@ -7,9 +7,9 @@ using namespace std;
 
 
 Game::Game(IPlayer* crosses, IPlayer* noughts) :
+	board(new Board()),
 	crossesPlayer(crosses),
-	noughtsPlayer(noughts),
-	board(new Board())
+	noughtsPlayer(noughts)
 {
 }
 

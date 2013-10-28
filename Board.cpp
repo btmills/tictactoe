@@ -66,7 +66,7 @@ void Board::Draw(void) const
 	while (i < 9)
 	{
 		cout << squares[i]->GetSymbol();
-		
+
 		i++;
 
 		if (i % 3 == 0)
@@ -87,8 +87,6 @@ void Board::Draw(void) const
 
 IPlayer* Board::GetWinner(void) const
 {
-	bool won = false;
-
 	// Check all routes through lastSquare for winner
 	Triple* triple = Triple::Create(lastSquare, Triple::Column);
 	if (triple != nullptr)

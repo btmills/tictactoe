@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
 			player = new HumanPlayer(piece);
 		else if (choice == "Computer")
 			player = new ComputerPlayer(piece);
-		else if (choice == "Random")
+		else // Default to "Random" player
 			player = new RandomPlayer(piece);
 
 		players[i] = player;
